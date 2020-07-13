@@ -64,7 +64,6 @@ nav .socialnav .title {
   flex: 2;
 }
 nav .socialnav .el {
-  border-left: 2px solid black;
   margin: 0 15px;
   padding: 0;
   display: flex;
@@ -117,7 +116,6 @@ main {
   margin: auto;
   text-align: center;
   width: 100%;
-  height: 600px;
   z-index: 222;
 }
 main .bg {
@@ -127,18 +125,52 @@ main .bg {
   object-fit: cover;
   background-position: center;
   position: absolute;
-  height: 100%;
+  height: 700px;
   width: 100%;
   z-index: -99;
-  opacity: 0.6;
+  opacity: 0.2;
+}
+main .tab-content {
+  background-image: url("/61199969_366717827287040_3685638511894986752_o.7f4dcdbe.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: center;
+  display: flex;
 }
 main .tab-pane {
+  margin: auto;
   color: black;
   font-size: 1.7rem;
-  padding: 0 150px;
-  margin: 150px;
-  justify-self: center;
-  align-self: center;
+  font-weight: 500;
+  padding: 0 50px;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.493);
+}
+main .tab-pane .text {
+  display: flex;
+  height: 100%;
+}
+main .tab-pane .text p {
+  margin: auto;
+}
+main .tab-pane .carousel {
+  display: flex;
+  height: 100%;
+}
+main .tab-pane .carousel .carousel-control-next-icon, main .tab-pane .carousel .carousel-control-prev-icon {
+  background-color: rgba(0, 0, 0, 0.897);
+  padding: 15px;
+  width: 100%;
+}
+main .tab-pane .carousel .carousel-inner {
+  margin: auto;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  width: 60%;
 }
 main .hero {
   background-color: rgba(255, 0, 0, 0.247);
@@ -164,12 +196,16 @@ main .hero .three {
 }
 
 footer {
-  border: 2px solid black;
-  border-bottom: none;
   display: flex;
-  position: sticky;
   margin: auto;
   justify-content: space-evenly;
+  width: 100%;
+  align-self: flex-end;
+  justify-self: end;
+  z-index: 999;
+  background-color: rgba(255, 209, 6, 0.938);
+  border: 2px solid black;
+  border-bottom: none;
 }
 footer ul {
   display: flex;

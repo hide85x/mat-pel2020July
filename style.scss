@@ -67,7 +67,7 @@ nav {
             flex: 2;
         }
         .el {
-            border-left: 2px solid black;
+            // border-left: 2px solid black;
             margin: 0 15px;
             padding: 0;
             display: flex;
@@ -126,7 +126,7 @@ main {
     margin: auto;
     text-align: center;
     width: 100%;
-    height:600px;
+    // height: 700px;
     z-index: 222;
     
     .bg {
@@ -136,22 +136,61 @@ main {
         object-fit: cover;
         background-position: center;
         position: absolute;
-        height: 100%;
+        height: 700px;
         width: 100%;
         z-index: -99;
-        opacity: 0.6;
+        opacity: 0.2;
         
     
     }
+    .tab-content {
+         background-image: url("pics/61199969_366717827287040_3685638511894986752_o.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-position: center;
+        display: flex;
+    }
     .tab-pane {
-        
+        margin: auto;
         color: black;
         font-size: 1.7rem;
-        padding: 0 150px;
-        margin: 150px;
-        justify-self: center;
-        align-self: center;
+        font-weight: 500;
+        padding: 0 50px;
+        height: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.493);
+        .text {
+            display: flex;
+            height: 100%;
+            p {
+                margin: auto;
+            }
+        }
+        // justify-self: center;
+        // align-self: center;
+        
+        
+        .carousel {
+            display: flex;
+            height: 100%;
+            .carousel-control-next-icon, .carousel-control-prev-icon {
+                background-color: rgba(0, 0, 0, 0.897);
+                padding: 15px;
+                width: 100%;
+            }
+            .carousel-inner {
+                margin: auto;
+                border-top: 3px solid white;
+                border-bottom: 3px solid white;
+                width: 60%;
+
+          }
+        }
     }
+  
    
 
     .hero {
@@ -180,12 +219,15 @@ main {
     }
 }
 footer {
-    border: 2px solid black;
-    border-bottom: none;
     display: flex;
-    position: sticky;
     margin: auto;
     justify-content: space-evenly;
+    width: 100%;
+    align-self: flex-end;
+    justify-self: end;
+    z-index: 999;
+    background-color: rgba(255, 209, 6, 0.938);    border: 2px solid black;
+    border-bottom: none;
     ul {
         display: flex;
         flex-direction: column;
