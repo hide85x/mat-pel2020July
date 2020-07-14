@@ -1,5 +1,26 @@
 @import url(https://cdn.rawgit.com/tonsky/FiraCode/1.205/distr/fira_code.css);
 
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+a {
+    color: inherit;
+    text-decoration: none
+
+}
+*, *::before, *::after {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+
+
+
 
 body {
     margin: auto;

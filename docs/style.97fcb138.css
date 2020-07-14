@@ -1,4 +1,22 @@
 @import url(https://cdn.rawgit.com/tonsky/FiraCode/1.205/distr/fira_code.css);
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+*, *::before, *::after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   margin: auto;
   font-family: "Quicksand", sans-serif;
@@ -37,7 +55,6 @@ section .nav .nav-item {
   }
 }
 section .nav .nav-link {
-  box-shadow: 0 0 23px 21px yellow;
   background-color: rgba(255, 255, 255, 0.301);
 }
 section .nav .active {
