@@ -37,6 +37,8 @@ section {
             }
         }
         .nav-link {
+            box-shadow: 0 0 23px 21px yellow;
+
             background-color: rgba(255, 255, 255, 0.301);
         }
         .active {
@@ -72,7 +74,7 @@ nav {
             }
         }
         border-bottom: 2px solid black;
-        border-up: none;
+        border-top: none;
     
         background-color: rgb(255, 209, 6);
         font-weight: 800;
@@ -208,6 +210,7 @@ main {
         align-items: center;
         justify-content: center;
         background-color: rgba(255, 255, 255, 0.493);
+       
         @media (max-width:700px) {
             font-size: 1rem;
             height: 300px;

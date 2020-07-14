@@ -37,6 +37,7 @@ section .nav .nav-item {
   }
 }
 section .nav .nav-link {
+  box-shadow: 0 0 23px 21px yellow;
   background-color: rgba(255, 255, 255, 0.301);
 }
 section .nav .active {
@@ -56,7 +57,7 @@ nav .modal {
 }
 nav .socialnav {
   border-bottom: 2px solid black;
-  border-up: none;
+  border-top: none;
   background-color: #ffd106;
   font-weight: 800;
   position: fixed;
