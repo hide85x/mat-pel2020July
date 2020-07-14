@@ -289,6 +289,7 @@ footer ul {
 footer ul div {
   display: flex;
   align-items: center;
+  gap: 5px;
 }
 footer ul p {
   margin: 2px;
