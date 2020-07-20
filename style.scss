@@ -304,17 +304,15 @@ footer {
         }
     }
     ul {
-        padding: 10px 10px;
+        padding: 5px 10px;
         display: flex;
         flex-direction: row;
-        list-style-type: none;
         gap: 30px;
         align-self: flex-start;
         justify-self: flex-end;
         @media (max-width:800px) {
             flex-wrap: wrap;
             flex-direction: column;
-            padding: 5px 10px;
             gap: 5px;
             flex: 1;
         }
@@ -333,7 +331,7 @@ footer {
              transform: scale(1);
              transition: all 0.2s ease;
              @media (max-width:800px) {
-                 padding: 2px 0;
+                 padding: 2px 2px;
                 font-size: 1.6rem !important;
 
             }
@@ -345,3 +343,6 @@ footer {
          }     
     }
 }
+
+
+
