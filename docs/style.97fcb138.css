@@ -48,8 +48,8 @@ section .nav {
   background-color: rgba(255, 255, 255, 0.589);
 }
 section .nav .nav-link {
-  border: none !important;
-  border-radius: 20px 0 20px 0;
+  border-radius: 0px;
+  transition: all 0.5s ease !important;
 }
 @media (max-width: 800px) {
   section .nav .nav-item {
@@ -57,6 +57,9 @@ section .nav .nav-link {
     border: none !important;
     border-radius: 20px !important;
   }
+}
+section .nav .active {
+  border-radius: 20px 0 20px 0;
 }
 @media (max-width: 500px) {
   section .nav .active {
