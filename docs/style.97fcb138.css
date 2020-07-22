@@ -47,14 +47,22 @@ section .nav {
   color: black;
   background-color: rgba(255, 255, 255, 0.589);
 }
+section .nav .nav-link {
+  border: none !important;
+  border-radius: 20px 0 20px 0;
+}
 @media (max-width: 800px) {
   section .nav .nav-item {
     font-size: 1.3rem;
+    border: none !important;
+    border-radius: 20px !important;
   }
 }
-section .nav .active {
-  border: 2px solid rgba(0, 0, 0, 0.589) !important;
-  border-bottom: none;
+@media (max-width: 500px) {
+  section .nav .active {
+    font-size: 1.3rem;
+    border: none !important;
+  }
 }
 section .nav img {
   width: 100%;
@@ -81,11 +89,19 @@ nav .socialnav {
 }
 @media (max-width: 800px) {
   nav .socialnav {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     padding: 5px;
+    text-align: center;
     align-items: center;
+    justify-content: center;
     gap: 5px;
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 400px) {
+  nav .socialnav {
+    text-align: center;
+    justify-content: center;
   }
 }
 @media (max-width: 800px) {
