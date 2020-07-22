@@ -23,7 +23,9 @@ a {
 
 
 body {
-    margin: auto;
+    margin: auto;background-image: url(https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-position: center;
+    background-size: contain;
     // font-family: 'Fira Code', sans-serif;
     font-family: 'Quicksand', sans-serif;
 }
@@ -37,13 +39,13 @@ a:hover {
 
 // bootstrapowe taby cardy
 section {
-    border: 2px solid black;
-    border-radius: 5px 5px;
-    border-bottom: none;
-  
-
+    // border: 2px solid black;
+    // border-radius: 5px 5px;
+    // border-bottom: none;
+    
+    
     .nav {
-        background-color: #fff;
+        
         margin:auto;
         margin-top: 120px;
         font-size: 2rem;
@@ -57,13 +59,11 @@ section {
                 font-size: 1rem;
             }
         }
-        .nav-link {
-            
-            background-color: rgba(255, 255, 255, 0.301);
+        .active {
         }
         .active {
             border: 2px solid black !important;
-            border-bottom: none;
+            border-bottom: none !important;
         }
     }
 }
@@ -80,20 +80,22 @@ nav {
         width: 100%;
     }
     .socialnav {
-      
-        border-bottom: 2px solid black;
         border-top: none;
-        background-color: rgb(255, 209, 6);
+        // border-bottom: 2px solid black;
+        // background-color: rgb(255, 209, 6);
+        // position: fixed;
+        background-color:rgba(0, 0, 0, 0.767);
         font-weight: 800;
-        position: fixed;
         width: 100%;
         z-index: 9999;
         display: flex;
         flex-wrap: wrap;
         padding: 5px;
-        margin-bottom: 150px;
+        margin-bottom: 50px;
+        color: white;
+
         @media (max-width:800px) {
-            font-size: 0.7rem;
+            font-size: 0.9rem;
             padding: 5px;
             align-items: center;
             gap: 5px;
@@ -111,7 +113,7 @@ nav {
                  h1 {
                      font-weight: 700;
                      text-decoration: underline;
-                     font-size: 1rem;
+                     font-size: 1.3rem;
                      margin:auto;
                  }
             }
@@ -147,7 +149,12 @@ nav {
                 display: flex;
                 flex-direction: column;
                 align-self: center;
+                a {
+                    color: white;
+
+                }
                 p {
+                    color: white;
                     align-self: center;
                     padding: 0;
                     margin: 0;
@@ -186,10 +193,10 @@ main {
     
     
     .bg {
-        background-image: url("https://images.pexels.com/photos/788200/pexels-photo-788200.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-        background-size: cover;
-        background-repeat: no-repeat;
-        object-fit: cover;
+        // background-image: url("https://images.pexels.com/photos/788200/pexels-photo-788200.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+        // background-size: cover;
+        // background-repeat: no-repeat;
+        // object-fit: cover;
         background-position: center;
         position: absolute;
         height: 700px;
@@ -200,13 +207,18 @@ main {
     
     }
     .tab-content {
-         background-image: url("pics/61199969_366717827287040_3685638511894986752_o.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        object-fit: cover;
-        background-position: center;
+        //  background-image: url("pics/61199969_366717827287040_3685638511894986752_o.jpg");
+        // background-size: cover;
+        // background-repeat: no-repeat;
+        // object-fit: cover;
+        // background-position: center;
         display: flex;
-       
+        flex-direction: column;
+       h1 {
+           top: -170px;
+           align-self: center;
+           position: absolute;
+       }
     }
     .tab-pane {
         margin: auto;
@@ -218,8 +230,8 @@ main {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: rgba(255, 255, 255, 0.493);
-       
+        background-color: rgba(154, 169, 187, 0.555);
+        
         @media (max-width:800px) {
             font-size: 1.3rem;
             height: 400px;
@@ -262,11 +274,12 @@ main {
 
 }
 footer {
+    background-color: rgba(0, 0, 0, 0.747);
     display: flex;
     margin: auto;
     justify-self: end;
     z-index: 999;
-    background-color: rgba(255, 209, 6, 0.938);    
+    // background-color: rgba(255, 209, 6, 0.938);    
     border-top: 2px solid black;
     border-bottom: none;
     .up {
@@ -290,14 +303,18 @@ footer {
     }
     .fooSocial {
         width:100%;
-        padding: 0px 10px;
+        padding: 0px 10px 10px 10px;
         margin: 0;
+        color: white;
         h5 {
             font-weight: 700;
         }
         p {
             padding: 0;
             margin: 0;
+        }
+        a {
+            color: white;
         }
         @media (max-width:600px) {
             padding: 5px 10px;
@@ -310,6 +327,7 @@ footer {
         gap: 30px;
         align-self: flex-start;
         justify-self: flex-end;
+      
         @media (max-width:800px) {
             flex-wrap: wrap;
             flex-direction: column;
@@ -320,6 +338,11 @@ footer {
             display: flex;
             align-items: center;
             gap: 5px;
+
+        }
+        a {
+            color: white;
+
         }
         p {
             margin: 2px;
@@ -327,6 +350,7 @@ footer {
             text-decoration: underline;
         }
          i {    
+             color: white;
              padding: 0;
              transform: scale(1);
              transition: all 0.2s ease;

@@ -19,6 +19,9 @@ a {
 
 body {
   margin: auto;
+  background-image: url(https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  background-position: center;
+  background-size: contain;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -31,13 +34,7 @@ a:hover {
   color: rgba(0, 0, 0, 0.5);
 }
 
-section {
-  border: 2px solid black;
-  border-radius: 5px 5px;
-  border-bottom: none;
-}
 section .nav {
-  background-color: #fff;
   margin: auto;
   margin-top: 120px;
   font-size: 2rem;
@@ -54,12 +51,9 @@ section .nav .nav-item {
     font-size: 1rem;
   }
 }
-section .nav .nav-link {
-  background-color: rgba(255, 255, 255, 0.301);
-}
 section .nav .active {
   border: 2px solid black !important;
-  border-bottom: none;
+  border-bottom: none !important;
 }
 
 nav img {
@@ -73,21 +67,20 @@ nav .modal {
   width: 100%;
 }
 nav .socialnav {
-  border-bottom: 2px solid black;
   border-top: none;
-  background-color: #ffd106;
+  background-color: rgba(0, 0, 0, 0.767);
   font-weight: 800;
-  position: fixed;
   width: 100%;
   z-index: 9999;
   display: flex;
   flex-wrap: wrap;
   padding: 5px;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
+  color: white;
 }
 @media (max-width: 800px) {
   nav .socialnav {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     padding: 5px;
     align-items: center;
     gap: 5px;
@@ -106,7 +99,7 @@ nav .socialnav .title {
   nav .socialnav .title h1 {
     font-weight: 700;
     text-decoration: underline;
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin: auto;
   }
 }
@@ -142,7 +135,11 @@ nav .socialnav .el .content {
   flex-direction: column;
   align-self: center;
 }
+nav .socialnav .el .content a {
+  color: white;
+}
 nav .socialnav .el .content p {
+  color: white;
   align-self: center;
   padding: 0;
   margin: 0;
@@ -172,10 +169,6 @@ main {
   z-index: 222;
 }
 main .bg {
-  background-image: url("https://images.pexels.com/photos/788200/pexels-photo-788200.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-  background-size: cover;
-  background-repeat: no-repeat;
-  object-fit: cover;
   background-position: center;
   position: absolute;
   height: 700px;
@@ -184,12 +177,13 @@ main .bg {
   opacity: 0.2;
 }
 main .tab-content {
-  background-image: url("/61199969_366717827287040_3685638511894986752_o.7f4dcdbe.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  object-fit: cover;
-  background-position: center;
   display: flex;
+  flex-direction: column;
+}
+main .tab-content h1 {
+  top: -170px;
+  align-self: center;
+  position: absolute;
 }
 main .tab-pane {
   margin: auto;
@@ -201,7 +195,7 @@ main .tab-pane {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.493);
+  background-color: rgba(154, 169, 187, 0.555);
 }
 @media (max-width: 800px) {
   main .tab-pane {
@@ -241,11 +235,11 @@ main .tab-pane .carousel .carousel-inner {
 }
 
 footer {
+  background-color: rgba(0, 0, 0, 0.747);
   display: flex;
   margin: auto;
   justify-self: end;
   z-index: 999;
-  background-color: rgba(255, 209, 6, 0.938);
   border-top: 2px solid black;
   border-bottom: none;
 }
@@ -269,8 +263,9 @@ footer .up i:hover {
 }
 footer .fooSocial {
   width: 100%;
-  padding: 0px 10px;
+  padding: 0px 10px 10px 10px;
   margin: 0;
+  color: white;
 }
 footer .fooSocial h5 {
   font-weight: 700;
@@ -278,6 +273,9 @@ footer .fooSocial h5 {
 footer .fooSocial p {
   padding: 0;
   margin: 0;
+}
+footer .fooSocial a {
+  color: white;
 }
 @media (max-width: 600px) {
   footer .fooSocial {
@@ -305,12 +303,16 @@ footer ul div {
   align-items: center;
   gap: 5px;
 }
+footer ul a {
+  color: white;
+}
 footer ul p {
   margin: 2px;
   padding: 0 5px 0 0;
   text-decoration: underline;
 }
 footer ul i {
+  color: white;
   padding: 0;
   transform: scale(1);
   transition: all 0.2s ease;
