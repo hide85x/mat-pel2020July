@@ -18,10 +18,12 @@ a {
 }
 
 body {
+  background-repeat: no-repeat;
   margin: auto;
   background-image: url(https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+  background-attachment: fixed;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -35,30 +37,29 @@ a:hover {
 }
 
 section .nav {
+  border-radius: 20px 20px 0 0;
   margin: auto;
   margin-top: 120px;
   font-size: 2rem;
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: center;
   color: black;
-}
-section .nav .nav-item {
-  color: black;
+  background-color: rgba(255, 255, 255, 0.589);
 }
 @media (max-width: 800px) {
   section .nav .nav-item {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
 section .nav .active {
-  border: 2px solid black !important;
-  border-bottom: none !important;
+  border: 2px solid rgba(0, 0, 0, 0.589) !important;
+  border-bottom: none;
 }
-
-nav img {
+section .nav img {
   width: 100%;
 }
+
 nav .button:hover {
   text-decoration: underline;
 }
@@ -180,12 +181,8 @@ main .tab-content {
   display: flex;
   flex-direction: column;
 }
-main .tab-content h1 {
-  top: -170px;
-  align-self: center;
-  position: absolute;
-}
 main .tab-pane {
+  width: 90%;
   margin: auto;
   color: black;
   font-size: 1.7rem;
@@ -195,7 +192,7 @@ main .tab-pane {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(154, 169, 187, 0.555);
+  background-color: rgba(255, 255, 255, 0.61);
 }
 @media (max-width: 800px) {
   main .tab-pane {
